@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JahnaviSiripurapu_Portfolio.git/static/css/main.d903c68b.css",
-    "main.js": "/JahnaviSiripurapu_Portfolio.git/static/js/main.68812bd8.js",
-    "static/media/avatar_cropped6.png": "/JahnaviSiripurapu_Portfolio.git/static/media/avatar_cropped6.53a9ef25998d0ec0de07.png",
-    "static/media/ava-removebg-preview.png": "/JahnaviSiripurapu_Portfolio.git/static/media/ava-removebg-preview.b92d9c28a9af5eb81cd0.png",
-    "index.html": "/JahnaviSiripurapu_Portfolio.git/index.html",
-    "main.d903c68b.css.map": "/JahnaviSiripurapu_Portfolio.git/static/css/main.d903c68b.css.map",
-    "main.68812bd8.js.map": "/JahnaviSiripurapu_Portfolio.git/static/js/main.68812bd8.js.map"
+    "main.css": "/JahnaviSiripurapu_Portfolio/static/css/main.d903c68b.css",
+    "main.js": "/JahnaviSiripurapu_Portfolio/static/js/main.a9db0945.js",
+    "static/media/avatar_cropped6.png": "/JahnaviSiripurapu_Portfolio/static/media/avatar_cropped6.53a9ef25998d0ec0de07.png",
+    "static/media/ava-removebg-preview.png": "/JahnaviSiripurapu_Portfolio/static/media/ava-removebg-preview.b92d9c28a9af5eb81cd0.png",
+    "index.html": "/JahnaviSiripurapu_Portfolio/index.html",
+    "main.d903c68b.css.map": "/JahnaviSiripurapu_Portfolio/static/css/main.d903c68b.css.map",
+    "main.a9db0945.js.map": "/JahnaviSiripurapu_Portfolio/static/js/main.a9db0945.js.map"
   },
   "entrypoints": [
     "static/css/main.d903c68b.css",
-    "static/js/main.68812bd8.js"
+    "static/js/main.a9db0945.js"
   ]
 }
