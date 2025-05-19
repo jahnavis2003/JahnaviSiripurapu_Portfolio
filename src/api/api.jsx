@@ -1,4 +1,5 @@
-const baseURL = "https://localhost:7127/api/FeedbackData";
+// const baseURL = "https://localhost:7127/api/FeedbackData";
+const baseURL = "https://jahnavis-hrdrc7dbhtatfkbg.canadacentral-01.azurewebsites.net/api/FeedbackData";
 
 const feedbackApi = {
   submitFeedback: async (data) => {
