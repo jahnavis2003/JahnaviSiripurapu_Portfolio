@@ -1,0 +1,65 @@
+.Toastify__progress-bar--success {
+    background: #84cc16; /* lime-500 */
+  }
+  
+  .Toastify__progress-bar--error {
+    background: #dc2626; /* red-600 */
+  }
+  
+  .Toastify__progress-bar--warning {
+    background: #fb923c; /* orange-400 */
+  }
+  
+  .Toastify__progress-bar--info, .Toastify__progress-bar--default {
+    background: #d946ef; /* fuchsia-500 */
+  }
+
+.Toastify__toast--info::before,
+.Toastify__toast--default::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #d946ef;
+  clip-path: path('M 12.5 0, C 11.25 5.75, 5.75 11.25, 0 12.5 C 5.75 13.75, 11.25 18.25, 12.5 25 C 13.75 18.25, 18.25 13.75, 25 12.5 C 18.25 11.25, 13.75 5.75, 12.5 0 Z');
+  position: relative;
+  margin-right: 0.5rem;
+  animation: sparkle 1.5s infinite ease-in-out;
+}
+
+/* Adding a smaller sparkle with pseudo-element */
+.Toastify__toast--info::after,
+.Toastify__toast--default::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 30px;
+  /* margin-right: 40px; */
+  background-color: #d946ef;
+  clip-path: path('M 7.5 0, C 6.75 3.45, 3.45 6.75, 0 7.5 C 3.45 8.25, 6.75 10.95, 7.5 15 C 8.25 10.95, 10.95 8.25, 15 7.5 C 10.95 6.75, 8.25 3.45, 7.5 0 Z');
+  position: absolute;
+  animation: sparkle 1.8s infinite ease-in-out 0.3s; /* Slightly different timing */
+}
+  
+  @keyframes sparkle {
+    0% {
+      transform: scale(0.8) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1) rotate(180deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(0.8) rotate(360deg);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .Toastify__progress-bar {
+    transition: all 0.3s ease-in-out;
+  }
+  

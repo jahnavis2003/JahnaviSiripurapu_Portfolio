@@ -1,0 +1,22 @@
+.navbar-items:hover{
+    cursor: pointer;
+    background-color: rgba(107, 70, 106, 0.216);
+    border-radius: 5px;
+    /* padding: 40px; */
+}
+/* .navbar-items{
+    border-radius: 5px;
+} */
+.active{
+    font-weight: bold;
+    border-width: 3px !important;
+    border-radius: 3px;
+}
+
+.hamburger-menu { 
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxsaW5lYXJHcmFkaWVudCBpZD0iOWlIWE11dlY3YnJTWDdoRnR+dHNuYSIgeDE9IjEyLjA2NiIgeDI9IjM0Ljg5MSIgeTE9Ii4wNjYiIHkyPSIyMi44OTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4yMzciIHN0b3AtY29sb3I9IiMzYmM5ZjMiLz48c3RvcCBvZmZzZXQ9Ii44NSIgc3RvcC1jb2xvcj0iIzE1OTFkOCIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCM5aUhYTXV2VjdiclNYN2hGdH50c25hKSIgZD0iTTQzLDE1SDVjLTEuMSwwLTItMC45LTItMnYtMmMwLTEuMSwwLjktMiwyLTJoMzhjMS4xLDAsMiwwLjksMiwydjJDNDUsMTQuMSw0NC4xLDE1LDQzLDE1eiIvPjxsaW5lYXJHcmFkaWVudCBpZD0iOWlIWE11dlY3YnJTWDdoRnR+dHNuYiIgeDE9IjEyLjA2NiIgeDI9IjM0Ljg5MSIgeTE9IjEyLjA2NiIgeTI9IjM0Ljg5MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iLjIzNyIgc3RvcC1jb2xvcj0iIzNiYzlmMyIvPjxzdG9wIG9mZnNldD0iLjg1IiBzdG9wLWNvbG9yPSIjMTU5MWQ4Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoIzlpSFhNdXZWN2JyU1g3aEZ0fnRzbmIpIiBkPSJNNDMsMjdINWMtMS4xLDAtMi0wLjktMi0ydi0yYzAtMS4xLDAuOS0yLDItMmgzOGMxLjEsMCwyLDAuOSwyLDJ2MkM0NSwyNi4xLDQ0LjEsMjcsNDMsMjd6Ii8+PGxpbmVhckdyYWRpZW50IGlkPSI5aUhYTXV2VjdiclNYN2hGdH50c25jIiB4MT0iMTIuMDY2IiB4Mj0iMzQuODkxIiB5MT0iMjQuMDY2IiB5Mj0iNDYuODkxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMjM3IiBzdG9wLWNvbG9yPSIjM2JjOWYzIi8+PHN0b3Agb2Zmc2V0PSIuODUiIHN0b3AtY29sb3I9IiMxNTkxZDgiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjOWlIWE11dlY3YnJTWDdoRnR+dHNuYykiIGQ9Ik00MywzOUg1Yy0xLjEsMC0yLTAuOS0yLTJ2LTJjMC0xLjEsMC45LTIsMi0yaDM4YzEuMSwwLDIsMC45LDIsMnYyQzQ1LDM4LjEsNDQuMSwzOSw0MywzOXoiLz48L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%; 
+}

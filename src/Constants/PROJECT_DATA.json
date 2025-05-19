@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "project_name": "JANY – Voice-Driven AI Assistant",
+    "description": "Built a React Native app enabling voice-based interaction with ChatGPT and DALL·E for accessible, text-free communication. Implemented speech-to-text and text-to-speech to support users with reading, writing, or vision impairments. Added a custom feature called “Cookie”, an AI-powered cooking assistant that suggests recipes based on available ingredients.",
+    "extra_info":"Presented at ICETCI 2024 & published on the official IEEE website",
+    "tech_stack": ["React Native", "Open AI API"],
+    "github_link": "https://github.com/jahnavis2003/JANY-VoiceAssistant",
+    "paper_link":"https://ieeexplore.ieee.org/document/10704161"
+  },
+  {
+    "id": 2,
+    "project_name": "Malware Analysis",
+    "description": "Developed a system to detect and classify malware using machine learning, deep learning (MLP), and behavioral analysis. Used dynamic analysis to monitor system calls and network activity, and trained an MLP model on extracted features to identify malware families and emerging threats. Aimed at improving early detection and strengthening cybersecurity defenses.",
+    "tech_stack": ["Python", "Cuckoo Sandbox", "Jupyter Notebook", "ML Libraries"],
+    "github_link": "https://github.com/jahnavis2003/Malware-Analysis",
+    "other_data": ""
+  },
+  {
+    "id": 3,
+    "project_name": "Weather App",
+    "description": "A sleek weather app built with HTML, CSS, and JavaScript, using the OpenWeather API to display real-time weather data. Integrated Unsplash API to dynamically load background images based on the searched location, enhancing the visual experience.",
+    "tech_stack": ["HTML", "CSS", "Javascript"],
+    "url": "https://jahnavis2003.github.io/WeatherApp/",
+    "github_link": "https://github.com/jahnavis2003/WeatherApp",
+    "other_data": ""
+  },
+  {
+    "id": 4,
+    "project_name": "Netflix Clone",
+    "description": "A responsive Netflix clone built using React.js, featuring a sleek UI with movie listings, banners, and trailers. Integrated TMDB API to fetch real-time movie data and display dynamic content, replicating the Netflix browsing experience.",
+    "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "Friebase", "MongoDB"],
+    "github_link": "https://github.com/jahnavis2003/NetflixCloneReact",
+    "other_data": ""  
+  },
+  {
+    "id": 5,
+    "project_name": "Zomato Clone",
+    "description": "A full-stack food delivery app inspired by Zomato, built with React.js, Node.js, and MongoDB. Features restaurant listings, search, user authentication, cart management, and payment gateway integration for seamless order checkout. Backend APIs handle data storage and real-time operations, providing a smooth and responsive user experience.",
+    "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "MongoDB"],
+    "url": "https://luminous-medovik-807a05.netlify.app/",
+    "github_link": "https://github.com/jahnavis2003/Zomato-Clone_Reactjs",
+    "other_data": ""  
+  },
+  {
+    "id": 6,
+    "project_name": "Mini Game",
+    "description": "A classic Checkers mini-game built in Python for a CS club contest. Features turn-based gameplay, basic AI for single-player mode, and a simple GUI using Pygame. Designed for quick fun and competitive play.",
+    "tech_stack": ["Python"],
+    "github_link": "https://github.com/AndroBuddy/Python-Game",
+    "other_data": ""
+  },
+  {
+    "id": 7,
+    "project_name": "Data Visualization",
+    "description": "A full-stack web app for visualizing student data like grades, attendance, and timetables, built with Node.js and MongoDB. Implements role-based authentication with distinct views for students, teachers, and admins. Features a clean UI and dynamic charts for clear, actionable insights.",
+    "tech_stack": ["ReactJs", "NodeJs", "ExpressJs", "MongoDB"],
+    "github_link": "https://github.com/Rounak-Das-02/ScoreVyu",
+    "other_data": ""  
+  },
+  {
+    "id": 8,
+    "project_name": "Portoflio Website",
+    "description": "A personal portfolio showcasing my projects, skills, and experience in web development, including full-stack applications, data visualizations, and AI integrations. Built with modern web technologies to highlight my work and demonstrate my expertise.",
+    "tech_stack": ["ReactJs", "Tailwind CSS", ".NET", "MSSQL"],
+    "url": "https://discuz.net/nisl/nunc/nisl/duis/bibendum/felis.json?luctus=quam&et=a&ultrices=odio&posuere=in&cubilia=hac&curae=habitasse&donec=platea&pharetra=dictumst&magna=maecenas&vestibulum=ut&aliquet=massa&ultrices=quis&erat=augue&tortor=luctus&sollicitudin=tincidunt&mi=nulla&sit=mollis&amet=molestie&lobortis=lorem&sapien=quisque&sapien=ut&non=erat&mi=curabitur&integer=gravida&ac=nisi&neque=at&duis=nibh&bibendum=in&morbi=hac&non=habitasse&quam=platea&nec=dictumst&dui=aliquam&luctus=augue&rutrum=quam&nulla=sollicitudin&tellus=vitae&in=consectetuer&sagittis=eget&dui=rutrum&vel=at&nisl=lorem&duis=integer&ac=tincidunt&nibh=ante&fusce=vel&lacus=ipsum&purus=praesent&aliquet=blandit&at=lacinia&feugiat=erat&non=vestibulum&pretium=sed&quis=magna&lectus=at&suspendisse=nunc&potenti=commodo&in=placerat&eleifend=praesent&quam=blandit&a=nam&odio=nulla&in=integer&hac=pede&habitasse=justo&platea=lacinia&dictumst=eget&maecenas=tincidunt&ut=eget&massa=tempus&quis=vel&augue=pede&luctus=morbi&tincidunt=porttitor&nulla=lorem&mollis=id&molestie=ligula&lorem=suspendisse&quisque=ornare&ut=consequat&erat=lectus&curabitur=in&gravida=est&nisi=risus&at=auctor&nibh=sed&in=tristique&hac=in&habitasse=tempus&platea=sit&dictumst=amet&aliquam=sem&augue=fusce&quam=consequat",
+    "github_link": "http://ucoz.com/cum.xml?dui=diam&maecenas=cras&tristique=pellentesque&est=volutpat&et=dui&tempus=maecenas&semper=tristique&est=est&quam=et&pharetra=tempus&magna=semper&ac=est&consequat=quam&metus=pharetra&sapien=magna&ut=ac&nunc=consequat&vestibulum=metus&ante=sapien&ipsum=ut&primis=nunc&in=vestibulum&faucibus=ante&orci=ipsum&luctus=primis&et=in&ultrices=faucibus&posuere=orci&cubilia=luctus&curae=et&mauris=ultrices&viverra=posuere&diam=cubilia&vitae=curae&quam=mauris&suspendisse=viverra&potenti=diam&nullam=vitae&porttitor=quam&lacus=suspendisse&at=potenti&turpis=nullam&donec=porttitor&posuere=lacus&metus=at&vitae=turpis&ipsum=donec&aliquam=posuere&non=metus&mauris=vitae&morbi=ipsum&non=aliquam&lectus=non&aliquam=mauris&sit=morbi&amet=non&diam=lectus&in=aliquam&magna=sit&bibendum=amet&imperdiet=diam&nullam=in&orci=magna&pede=bibendum&venenatis=imperdiet&non=nullam&sodales=orci&sed=pede&tincidunt=venenatis&eu=non&felis=sodales&fusce=sed&posuere=tincidunt&felis=eu&sed=felis&lacus=fusce&morbi=posuere&sem=felis&mauris=sed&laoreet=lacus&ut=morbi&rhoncus=sem&aliquet=mauris&pulvinar=laoreet&sed=ut&nisl=rhoncus&nunc=aliquet&rhoncus=pulvinar&dui=sed&vel=nisl&sem=nunc&sed=rhoncus&sagittis=dui&nam=vel&congue=sem&risus=sed&semper=sagittis&porta=nam&volutpat=congue&quam=risus",
+    "other_data": ""
+  },
+  {
+    "id": 9,
+    "project_name": "E-Commerce Website",
+    "description": "A fully functional e-commerce platform built with React.js, ASP .NET CORE, and MongoDB. Features include product listings, user authentication, role-based authorization, shopping cart, and order management. Designed for a seamless shopping experience with an intuitive UI.",
+    "tech_stack": ["ReactJs", "Bootstrap", ".NET", "MongoDB"],
+    "other_data": ""
+  }
+]

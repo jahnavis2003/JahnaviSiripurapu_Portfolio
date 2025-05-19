@@ -1,13 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
 }
+
+::selection {
+  background-color: #71636E; /* Your custom background */
+  color: #ffffff;         /*   Your custom text color */
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #272427 inset !important;
+  -webkit-text-fill-color: oklch(97.7% 0.017 320.058) !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* body, * {
+  @apply scrollbar-thin scrollbar-thumb-fuchsia-400 scrollbar-track-stone-800;
+} */
+
+
+/* Apply to body or any scrollable container  */
+ body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e879f96d;   
+  border-radius: 40px;
+  border: 2px solid #1e1e1e; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #d846ef71;
+}
+
