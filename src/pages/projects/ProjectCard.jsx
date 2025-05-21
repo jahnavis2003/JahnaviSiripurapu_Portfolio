@@ -24,16 +24,16 @@ const ProjectCard = ({ project, position, imageVariants }) => {
     >
       <div className="relative flex flex-col items-center justify-between h-full">
         <div className="absolute -top-2 -right-2 h-2 w-2 bg-emerald-400 rounded-full animate-pulse" />
-        <h1 className="text-2xl font-bold mb-3 tracking-tight">{project.project_name}</h1>
-        <p className="text-neutral-300 mb-5 leading-relaxed">{project.description}</p>
+        <h1 className="sm:text-2xl text-lg font-bold mb-3 tracking-tight">{project.project_name}</h1>
+        <p className="text-neutral-300 mb-5 leading-relaxed text-sm sm:text-base">{project.description}</p>
         
         <div className="flex items-center mb-4 gap-2">
           <div className="h-0.5 w-4 bg-fuchsia-500/70" />
-          <p className="font-medium text-sm tracking-wide text-neutral-400">TECH STACK</p>
+          <p className="font-medium sm:text-sm text-xs tracking-wide text-neutral-400">TECH STACK</p>
         </div>
         <div className='flex flex-wrap'>
           {project.tech_stack.map((stack, index) => (
-              <p key={index} className="text-fuchsia-400 font-mono text-sm mb-6 bg-fuchsia-600/10 p-2 mr-2 rounded-full hover:bg-fuchsia-600/15 transition-transform duration-600 ease-in-out hover:scale-105">{stack}</p>
+              <p key={index} className="text-fuchsia-400 font-mono sm:text-sm text-xs mb-6 bg-fuchsia-600/10 p-2 mr-2 rounded-full hover:bg-fuchsia-600/15 transition-transform duration-600 ease-in-out hover:scale-105">{stack}</p>
           ))}
         </div>
 
@@ -79,13 +79,13 @@ const LinkItem = ({ icon, label, url }) => {
     >
       {!(icon === 'paper') &&
         <div className="w-5 h-5 flex items-center justify-center">
-          {icon === 'github' && <span className="text-lg">🔗</span>}
-          {icon === 'demo' && <span className="text-lg">🌐</span>}
+          {icon === 'github' && <span className="sm:text-lg text-md">🔗</span>}
+          {icon === 'demo' && <span className="sm:text-lg text-md">🌐</span>}
         </div>
       }
-      <span className="text-sm text-neutral-200 text-wrap text-start">{label}</span>
+      <span className="sm:text-sm text-xs text-neutral-200 text-wrap text-start">{label}</span>
       <ArrowUpRight 
-        className="ml-auto w-4 h-4 text-neutral-400 group-hover:text-white transition-colors flex-shrink-0" 
+        className="ml-auto sm:w-4 sm:h-4 w-3 h-3 text-neutral-400 group-hover:text-white transition-colors flex-shrink-0" 
       />
     </a>
   );

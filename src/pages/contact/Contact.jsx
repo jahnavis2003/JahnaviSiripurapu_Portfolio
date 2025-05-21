@@ -64,10 +64,10 @@ const Contact = () => {
     }
   }
   return (
-    <div className='relative flex flex-col items-center justify-center overflow-y-auto scrollbar-hide min-h-screen '>
+    <div className='relative flex flex-col items-center justify-center overflow-y-auto scrollbar-hide min-h-screen pb-5'>
       <ContactHeader />
       <div className="flex flex-col justify-center items-center align-middle p-5 text-fuchsia-100 xxl:pt-32 pt-44">
-        <p className="text-lg sm:text-xl md:text-lg w-[90vw] sm:w-3/4 text-center pb-10">
+        <p className="text-sm md:text-xl sm:text-lg w-[90vw] sm:w-3/4 text-center pb-10">
           {`Besides reaching me through LinkedIn, X, or Gmail,
           if you’d like, you can drop your email in the textbox below with any comments, feedback or collab ideas you have. 
           Constructive criticism is much appreciated, and I will definitely get in touch with you when I get some free time.`}
@@ -77,7 +77,7 @@ const Contact = () => {
           className="flex flex-col items-start w-[90vw] sm:w-3/4 md:w-2/3 lg:w-1/2 min-h-auto bg-[rgba(255,157,234,0.1)] 
           shadow-[0_0_25px_5px_#80527460] rounded-2xl p-8"
         >
-            <label className="block font-semibold mt-7 mb-1 text-lg" htmlFor="name">
+            <label className="block font-semibold mt-7 mb-1 sm:text-lg text-md" htmlFor="name">
               {`Name:`}
             </label>
             <input
@@ -87,6 +87,8 @@ const Contact = () => {
               className="w-full p-2 border rounded-md mb-3 border-neutral-700 
               disabled:cursor-not-allowed
               placeholder:text-neutral-600
+              placeholder:sm:text-lg
+              placeholder:text-sm
               focus:outline-none 
               focus:ring-2 
               focus:ring-fuchsia-500/40
@@ -98,7 +100,7 @@ const Contact = () => {
               onChange={(e)=>setName(e.target.value)}
               disabled={isLoading}
             />
-            <label className="block font-semibold mb-1 text-lg" htmlFor="comments">
+            <label className="block font-semibold mb-1 sm:text-lg text-md" htmlFor="comments">
               {`Comments:`}
             </label>
             <textarea
@@ -108,6 +110,8 @@ const Contact = () => {
               className="w-full p-2 border rounded-md min-h-[10vh] max-h-[40vh] border-neutral-700 
               disabled:cursor-not-allowed
               placeholder:text-neutral-600
+              placeholder:sm:text-lg
+              placeholder:text-sm
               focus:outline-none 
               focus:ring-2 
               focus:ring-fuchsia-500/40
@@ -119,7 +123,7 @@ const Contact = () => {
               disabled={isLoading}
             />
 
-            <label className="block font-semibold mt-7 mb-1 text-lg" htmlFor="email">
+            <label className="block font-semibold mt-7 mb-1 sm:text-lg text-md" htmlFor="email">
               {`Email (optional):`}
             </label>
             <input
@@ -129,6 +133,8 @@ const Contact = () => {
               className="w-full p-2 border rounded-md mb-3 border-neutral-700 
               disabled:cursor-not-allowed
               placeholder:text-neutral-600
+              placeholder:sm:text-lg
+              placeholder:text-sm
               focus:outline-none 
               focus:ring-2 
               focus:ring-fuchsia-500/40
@@ -139,7 +145,7 @@ const Contact = () => {
               onChange={(e)=>setEmail(e.target.value)}
               disabled={isLoading}
             />
-            <label className="block font-semibold mt-7 mb-1 text-lg" htmlFor="phone">
+            <label className="block font-semibold mt-7 mb-1 sm:text-lg text-md" htmlFor="phone">
               {`Phone (optional):`}
             </label>
             <input
@@ -149,6 +155,8 @@ const Contact = () => {
               className="w-full p-2 border rounded-md mb-3 border-neutral-700 
               disabled:cursor-not-allowed
               placeholder:text-neutral-600
+              placeholder:sm:text-lg
+              placeholder:text-sm
               focus:outline-none 
               focus:ring-2 
               focus:ring-fuchsia-500/40
@@ -163,14 +171,20 @@ const Contact = () => {
             <div className="flex w-full justify-center mt-10">
               <button
                 type="submit"
-                className={`flex items-center justify-center gap-2 buttonStyle p-2 px-0 w-1/2 sm:w-1/3 md:w-1/5 bg-[rgba(113,99,110,1)] text-white rounded-lg 
+                className={`flex items-center justify-center gap-2 sm:text-base text-sm buttonStyle p-2 px-0 w-1/2 sm:w-1/3 md:w-1/5 bg-[rgba(113,99,110,1)] text-white rounded-lg 
                 ${isLoading ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#7c6076] hover:shadow-[_0_11px_11px_-5px_rgba(113,99,110,0.7)] transition-all duration-300 hover:scale-110'}`}
               > 
                 {isLoading ? (
-                  <Loader2 size={20} className="animate-spin" />
+                  <Loader2 
+                    // size={20} 
+                    className="animate-spin sm:w-5 sm:h-5 w-4 h-4" 
+                  />
                 ) : (
                   <>
-                    <Send size={20} />
+                    <Send 
+                      // size={20} 
+                      className='sm:w-5 sm:h-5 w-4 h-4'
+                    />
                     Submit
                   </>
                 )}

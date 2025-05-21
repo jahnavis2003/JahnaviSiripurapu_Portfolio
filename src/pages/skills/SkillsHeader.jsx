@@ -18,10 +18,10 @@ const SkillsHeader = () => {
             <Terminal className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-white tracking-tight text-start">
+            <h1 className="sm:text-2xl text-lg font-bold text-white tracking-tight text-start">
               Technical Skills
             </h1>
-            <p className="text-neutral-400 text-sm">
+            <p className="text-neutral-400 sm:text-sm text-xs">
               Technologies I’ve explored and enjoyed working with.
             </p>
           </div>

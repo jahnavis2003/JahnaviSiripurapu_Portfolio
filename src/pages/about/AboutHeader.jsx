@@ -19,10 +19,10 @@ const AboutHeader = () => {
             <Hash className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-white tracking-tight text-start">
+            <h1 className="sm:text-2xl text-lg font-bold text-white tracking-tight text-start">
               About Me
             </h1>
-            <p className="text-neutral-400 text-sm">
+            <p className="text-neutral-400 sm:text-sm text-xs">
               A brief intro about my journey
             </p>
           </div>

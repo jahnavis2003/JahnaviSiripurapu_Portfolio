@@ -44,12 +44,12 @@ const Header = () => {
     <div className={`flex md:flex-row flex-col md:justify-between items-start z-50 fixed w-full bg-black md:items-center p-3 pr-0 py-0 border-b-2 border-neutral-900 shadow-xl shadow-neutral-800/40 overflow-y-auto scrollbar-hide
       transition-transform duration-300 ${ showHeader ? 'translate-y-0' : '-translate-y-full' }
     `}>
-      <div className='flex flex-row justify-between w-full overflow-y-auto scrollbar-hide'>
+      <div className='flex flex-row justify-between items-center w-full overflow-y-auto scrollbar-hide'>
         <div>
           <img 
             src={logo} 
             alt="Logo" 
-            className="w-[75px] h-auto cursor-pointer"
+            className="sm:w-[75px] w-[50px] h-auto cursor-pointer"
             onClick={() => {
               handleClick('home')
             }}
@@ -65,14 +65,28 @@ const Header = () => {
             {!open && 
               <MenuIcon 
                 className='m-3 cursor-pointer' 
-                style={{ color: 'white', fontSize: 50 }} 
+                style={{ color: 'white' }} 
+                sx={{
+                fontSize: {
+                  xs: 30, // 0px and up (mobile)
+                  sm: 30, // 600px and up
+                  md: 50, // 900px and up
+                },
+            }}
                 onClick={() => setOpen(true)}
               />
             }
             {open && 
               <CloseIcon 
                 className='m-3 cursor-pointer' 
-                style={{ color: 'white', fontSize: 50 }} 
+                style={{ color: 'white' }} 
+                sx={{
+                fontSize: {
+                  xs: 30, // 0px and up (mobile)
+                  sm: 30, // 600px and up
+                  md: 50, // 900px and up
+                },
+            }}
                 onClick={() => setOpen(false)}
               />
             }
@@ -125,7 +139,7 @@ const Header = () => {
           key={item} 
           className={`
             navbar-items relative cursor-pointer 
-            p-[20px] pt-6 pb-6 flex items-start
+            p-[12px] pt-6 pb-6 flex items-start
             ${active(`/${item.toLowerCase()}`) ? 
               'text-fuchsia-400' : 
               'text-fuchsia-100 hover:text-pink-200'
@@ -136,7 +150,7 @@ const Header = () => {
               setOpen(false)
             }}
           >     
-            <p>{item}</p>
+            <p className='sm:text-base text-xs'>{item}</p>
           </motion.div>
         ))}
       </div> 

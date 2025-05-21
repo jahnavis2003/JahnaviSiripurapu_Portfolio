@@ -8,6 +8,7 @@ import Skills from '../pages/skills/Skills';
 import Projects from '../pages/projects/Projects';
 import Contact from '../pages/contact/Contact';
 import NotFound from '../pages/Misc/PageNotFound';
+import { Navigate } from 'react-router';
 // import Fun from '../pages/interactions/Fun';
 
 
@@ -15,6 +16,7 @@ const Routing = () => {
   return (
       <Routes>
         <Route path="/" element={<Layout/>} >
+          <Route index element={<Navigate to="home" replace />} />
           <Route path="home" element={<Home />}/>
           <Route path="about" element={<About />}/>
           <Route path="skills" element={<Skills />}/>

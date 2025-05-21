@@ -6,9 +6,9 @@ const Skills = () => {
     'react', 'javascript', 'html', 'css', 'java', 'redux', 'bootstrap', 'tailwind-css', 'my-sql', 'node-js', 'express-js', 'dotnet-framework', 'figma', 'adobe-xd', 'github', 'git'
   ]
   return (
-    <div className="relative pb-0 p-14 px-0 flex items-center justify-center overflow-y-auto min-h-screen scrollbar-hide">
+    <div className="relative pb-0 sm:p-14 sm:px-0 px-2 flex items-center justify-center overflow-y-auto min-h-screen scrollbar-hide">
       <SkillsHeader />
-      <div className='xxl:pt-0 pt-36 sm:pt-32 xxl:h-[50vh] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 md:gap-x-[10vw] md:gap-y-[9vh] mb-[7vh]'>
+      <div className='xxl:pt-0 pt-44 sm:pt-32 xxl:h-[50vh] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 md:gap-x-[10vw] md:gap-y-[9vh] sm:mb-[7vh]'>
         {skillsArr.map((item, index) => {
           return (
             <div
@@ -29,7 +29,7 @@ const Skills = () => {
               `}
               >
               </div>
-              <p className='text-fuchsia-50 font-mono uppercase font-medium pt-1'>{item}</p>
+              <p className='text-fuchsia-50 font-mono uppercase font-medium text-xs sm:text-base pt-1'>{item}</p>
             </div>
           );        
         })}

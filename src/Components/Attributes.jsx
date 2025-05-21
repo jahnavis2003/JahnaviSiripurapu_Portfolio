@@ -14,7 +14,7 @@ const Attributes = () => {
     }, []);
   
     return (
-      <div className="h-10 overflow-hidden text-2xl text-fuchsia-400 mt-10">
+      <div className="h-10 overflow-hidden sm:text-2xl text-xl text-fuchsia-400 mt-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={words[index]}
