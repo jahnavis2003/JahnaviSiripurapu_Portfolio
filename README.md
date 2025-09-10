@@ -5,7 +5,7 @@ Welcome to my personal developer portfolio website! This site showcases the proj
 
 ## 🔗 Live Demo
 
-🌐 [View Portfolio](https://your-netlify-url.netlify.app)
+🌐 [View Portfolio](https://jahnavis2003.github.io/JahnaviSiripurapu_Portfolio/#/home)
 
 ---
 
