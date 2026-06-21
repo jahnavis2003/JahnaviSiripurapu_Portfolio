@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
-// import { BrowserRouter } from 'react-router-dom';
-import { HashRouter } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import ErrorBoundary from './pages/Misc/ErrorBoundary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ErrorBoundary >
-      <HashRouter>
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </ErrorBoundary>
   </React.StrictMode>
 );
