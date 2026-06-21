@@ -27,7 +27,7 @@ const AboutMe = () => {
   const isCalloutInView = useInView(calloutRef, { once: true, margin: "0px" });
 
   return (
-    <div className="relative flex flex-col items-center justify-start px-5 sm:px-14 scrollbar-hide">
+    <div className="relative flex flex-col items-center justify-start px-5 sm:px-14 scrollbar-hide mb-10">
       <AboutHeader />
 
       <div className="w-full max-w-3xl xl:max-w-5xl mt-60 sm:mt-56">

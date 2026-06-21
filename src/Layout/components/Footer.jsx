@@ -87,7 +87,7 @@ const Footer = () => {
             {/* Quick Links */}
             <nav className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 mb-8 mdl:mb-0">
               <a 
-                href="/home" 
+                href="/"
                 className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
               >
                 <Home 

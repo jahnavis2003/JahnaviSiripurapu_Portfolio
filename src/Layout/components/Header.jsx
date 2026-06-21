@@ -36,9 +36,12 @@ const Header = () => {
       lastScrollY.current = currentY;
     });
   }
+  const getPath = (item) => item.toLowerCase() === 'home' ? '/' : `/${item.toLowerCase()}`;
+
   const handleClick = (route) => {
     localStorage.setItem('navbarItemKey', route.toLowerCase());
-    navigate(`/${route.toLowerCase()}`);
+    navigate(getPath(route));
+    if (route.toLowerCase() === 'home') window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   
   return (
@@ -46,7 +49,7 @@ const Header = () => {
       transition-transform duration-300 ${ showHeader ? 'translate-y-0' : '-translate-y-full' }
     `}>
       <div className='flex flex-row justify-between items-center w-full md:w-auto shrink-0 overflow-y-auto scrollbar-hide'>
-        <Link to="/home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img
             src={logo}
             alt="Logo"
@@ -97,7 +100,7 @@ const Header = () => {
             key={item} 
             className={`
               navbar-items relative cursor-pointer
-              ${active(`/${item.toLowerCase()}`)
+              ${active(getPath(item))
                 ? 'text-pink-100 shadow-[inset_0_-10px_10px_-5px_rgba(217,70,239,0.5),_0_10px_10px_-4px_rgba(217,70,239,0.5)]'
                 : 'text-pink-100 hover:text-pink-200'
               }
