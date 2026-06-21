@@ -13,10 +13,10 @@
     "id": 1,
     "project_name": "JANY – Voice-Driven AI Assistant",
     "description": "Built a React Native app enabling voice-based interaction with ChatGPT and DALL·E for accessible, text-free communication. Implemented speech-to-text and text-to-speech to support users with reading, writing, or vision impairments. Added a custom feature called 'Cookie', an AI-powered cooking assistant that suggests recipes based on available ingredients.",
-    "extra_info":"Presented at ICETCI 2024 & published on the official IEEE website",
+    "extra_info": "Presented at ICETCI 2024 & published on the official IEEE website",
     "tech_stack": ["React Native", "Open AI API"],
     "github_link": "https://github.com/jahnavis2003/JANY-VoiceAssistant",
-    "paper_link":"https://ieeexplore.ieee.org/document/10704161"
+    "paper_link": "https://ieeexplore.ieee.org/document/10704161"
   },
   {
     "id": 2,
@@ -35,8 +35,7 @@
     "project_name": "Malware Analysis",
     "description": "Developed a system to detect and classify malware using machine learning, deep learning (MLP), and behavioral analysis. Used dynamic analysis to monitor system calls and network activity, and trained an MLP model on extracted features to identify malware families and emerging threats. Aimed at improving early detection and strengthening cybersecurity defenses.",
     "tech_stack": ["Python", "Cuckoo Sandbox", "Jupyter Notebook", "ML Libraries"],
-    "github_link": "https://github.com/jahnavis2003/Malware-Analysis",
-    "other_data": ""
+    "github_link": "https://github.com/jahnavis2003/Malware-Analysis"
   },
   {
     "id": 5,
@@ -44,55 +43,62 @@
     "description": "A personal portfolio showcasing my projects, skills, and experience in software development, including full-stack applications, data visualizations, and AI integrations. Built with modern web technologies to highlight my work and demonstrate my expertise.",
     "tech_stack": ["ReactJs", "Tailwind CSS", ".NET", "MSSQL"],
     "url": "https://jahnavis2003.github.io/JahnaviSiripurapu_Portfolio/#/home",
-    "github_link": "https://github.com/jahnavis2003/JahnaviSiripurapu_Portfolio",
-    "other_data": ""
+    "github_link": "https://github.com/jahnavis2003/JahnaviSiripurapu_Portfolio"
   },
   {
     "id": 6,
+    "project_name": "MastersMatcher",
+    "description": "A web platform built to help students navigate and simplify the process of applying for Master's programs. Features Google SSO for seamless authentication, personalized university matching, and an intuitive interface to track and manage applications. Built with React and Shadcn UI on the frontend and .NET powering the backend.",
+    "tech_stack": ["React", "Shadcn UI", ".NET", "Google SSO"]
+  },
+  {
+    "id": 7,
+    "project_name": "Recall Runner",
+    "description": "A gamified language learning platform that turns spaced repetition into a 3D arcade experience. Players sprint down a vocabulary runway collecting letters to form words, with dynamic scaffolding that gradually removes hints as mastery grows. Works fully offline across web and mobile, built with React Three Fiber for immersive 3D gameplay and Capacitor to ship natively on iOS and Android.",
+    "tech_stack": ["Next.js", "React", "React Three Fiber", "Capacitor"],
+    "url": "https://www.recallrunner.com"
+  },
+  {
+    "id": 8,
     "project_name": "E-Commerce Website",
     "description": "A fully functional e-commerce platform built with React.js, ASP .NET CORE, and MongoDB. Features include product listings, user authentication, role-based authorization, shopping cart, and order management. Designed for a seamless shopping experience with an intuitive UI.",
-    "tech_stack": ["ReactJs", "Bootstrap", ".NET", "MongoDB"],
-    "other_data": ""
-  },  {
-    "id": 7,
+    "tech_stack": ["ReactJs", "Bootstrap", ".NET", "MongoDB"]
+  },
+  {
+    "id": 9,
     "project_name": "Weather App",
     "description": "A sleek weather app built with HTML, CSS, and JavaScript, using the OpenWeather API to display real-time weather data. Integrated Unsplash API to dynamically load background images based on the searched location, enhancing the visual experience.",
     "tech_stack": ["HTML", "CSS", "Javascript"],
     "url": "https://jahnavis2003.github.io/WeatherApp/",
-    "github_link": "https://github.com/jahnavis2003/WeatherApp",
-    "other_data": ""
+    "github_link": "https://github.com/jahnavis2003/WeatherApp"
   },
   {
-    "id": 8,
+    "id": 10,
     "project_name": "Netflix Clone",
     "description": "A responsive Netflix clone built using React.js, featuring a sleek UI with movie listings, banners, and trailers. Integrated TMDB API to fetch real-time movie data and display dynamic content, replicating the Netflix browsing experience.",
     "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "Firebase", "MongoDB"],
-    "github_link": "https://github.com/jahnavis2003/NetflixCloneReact",
-    "other_data": ""
+    "github_link": "https://github.com/jahnavis2003/NetflixCloneReact"
   },
   {
-    "id": 9,
+    "id": 11,
     "project_name": "Zomato Clone",
     "description": "A full-stack food delivery app inspired by Zomato, built with React.js, Node.js, and MongoDB. Features restaurant listings, search, user authentication, cart management, and payment gateway integration for seamless order checkout. Backend APIs handle data storage and real-time operations, providing a smooth and responsive user experience.",
     "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "MongoDB"],
     "url": "https://luminous-medovik-807a05.netlify.app/",
-    "github_link": "https://github.com/jahnavis2003/Zomato-Clone_Reactjs",
-    "other_data": ""
+    "github_link": "https://github.com/jahnavis2003/Zomato-Clone_Reactjs"
   },
   {
-    "id": 10,
+    "id": 12,
     "project_name": "Mini Game",
     "description": "A classic Checkers mini-game built in Python for a CS club contest. Features turn-based gameplay, basic AI for single-player mode, and a simple GUI using Pygame. Designed for quick fun and competitive play.",
     "tech_stack": ["Python"],
-    "github_link": "https://github.com/AndroBuddy/Python-Game",
-    "other_data": ""
+    "github_link": "https://github.com/AndroBuddy/Python-Game"
   },
   {
-    "id": 11,
+    "id": 13,
     "project_name": "Data Visualization",
     "description": "A full-stack web app for visualizing student data like grades, attendance, and timetables, built with Node.js and MongoDB. Implements role-based authentication with distinct views for students, teachers, and admins. Features a clean UI and dynamic charts for clear, actionable insights.",
     "tech_stack": ["ReactJs", "NodeJs", "ExpressJs", "MongoDB"],
-    "github_link": "https://github.com/Rounak-Das-02/ScoreVyu",
-    "other_data": ""
+    "github_link": "https://github.com/Rounak-Das-02/ScoreVyu"
   }
 ]

@@ -44,7 +44,7 @@ const ProjectCard = ({ project, position, imageVariants }) => {
             <LinkItem icon="github" label="GitHub" url={project.github_link} />
           )}
           {project.url && (
-            <LinkItem icon="demo" label="Live Demo" url={project.url} />
+            <LinkItem icon="demo" label="Live Website" url={project.url} />
           )}
           {project.marketing_site && (
             <LinkItem icon="demo" label="Marketing Site" url={project.marketing_site} />

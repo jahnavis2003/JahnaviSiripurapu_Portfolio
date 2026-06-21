@@ -3,7 +3,7 @@
 
 Welcome to my personal developer portfolio website! This site showcases the projects I’ve built, the skills I possess, and the experience I’ve gathered. It’s built with modern web technologies and reflects my passion for creating user-friendly, functional, and beautiful digital experiences.
 
-## 🔗 Live Demo
+## 🔗 Website Link
 
 🌐 [View Portfolio](https://jahnavis2003.github.io/JahnaviSiripurapu_Portfolio/#/home)
 

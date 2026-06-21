@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { MapPin, Calendar, ChevronDown, Briefcase, Building2 } from 'lucide-react';
+import { MapPin, Calendar, ChevronDown, Building2 } from 'lucide-react';
 import { useRef } from 'react';
 import CareerHeader from './CareerHeader';
 import careerData from '../../Constants/CAREER_DATA.json';
