@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import feedbackApi from '../../api/api';
 import { ToastContainer, toast } from 'react-toastify';
 import "./contact.css";
 import { Loader2, Send, MessageSquare, Clock, MapPin } from 'lucide-react';
@@ -50,15 +49,22 @@ const Contact = () => {
     e.preventDefault();
     if (!name.trim()) { notify('Please enter your name!', Status.WARNING); return; }
     if (!email.trim()) { notify('Please enter your email!', Status.WARNING); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { notify('Please enter a valid email address!', Status.WARNING); return; }
     if (!phone.trim()) { notify('Please enter your phone number!', Status.WARNING); return; }
     if (!reviews.trim()) { notify('Please enter a message!', Status.WARNING); return; }
     setIsLoading(true);
-    const response = await feedbackApi.submitFeedback(data);
-    if (!response.success) {
-      notify(response || 'Something went wrong!', Status.ERROR);
-    } else {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, reviews }),
+      });
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error);
       setName(''); setReviews(''); setEmail(''); setPhone('');
-      notify(response.message, Status.DEFAULT);
+      notify(json.message, Status.SUCCESS);
+    } catch (err) {
+      notify(err.message || 'Something went wrong!', Status.ERROR);
     }
     setIsLoading(false);
   };
