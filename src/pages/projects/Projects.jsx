@@ -13,69 +13,15 @@ const positions = [
 ];
 
 const imageVariants = {
-  center: { 
-    x: "0%", 
-    scale: 1, 
-    zIndex: 9,
-    opacity: 1,
-    filter: "brightness(1)"
-  },
-  left: { 
-    x: "-45%", 
-    scale: 0.85, 
-    zIndex: 8,
-    opacity: 0.9,
-    filter: "brightness(0.7)"
-  },
-  left1: { 
-    x: "-75%", 
-    scale: 0.6, 
-    zIndex: 7,
-    opacity: 0.7,
-    filter: "brightness(0.5)"
-  },
-  left2: { 
-    x: "-95%", 
-    scale: 0.4, 
-    zIndex: 6,
-    opacity: 0.5,
-    filter: "brightness(0.4)"
-  },
-  left3: { 
-    x: "-105%", 
-    scale: 0.25, 
-    zIndex: 5,
-    opacity: 0.3,
-    filter: "brightness(0.3)"
-  },
-  right3: { 
-    x: "105%", 
-    scale: 0.25, 
-    zIndex: 5,
-    opacity: 0.3,
-    filter: "brightness(0.3)" 
-  },
-  right2: { 
-    x: "95%", 
-    scale: 0.4, 
-    zIndex: 6,
-    opacity: 0.5,
-    filter: "brightness(0.4)"
-  },
-  right1: { 
-    x: "75%", 
-    scale: 0.6, 
-    zIndex: 7,
-    opacity: 0.7,
-    filter: "brightness(0.5)"
-  },
-  right: { 
-    x: "45%", 
-    scale: 0.85, 
-    zIndex: 8,
-    opacity: 0.9,
-    filter: "brightness(0.7)"
-  },
+  center: { x: "0%",    y: "-50%", scale: 1,    zIndex: 9, opacity: 1,   filter: "brightness(1)"   },
+  left:   { x: "-45%",  y: "-50%", scale: 0.85, zIndex: 8, opacity: 0.9, filter: "brightness(0.7)" },
+  left1:  { x: "-75%",  y: "-50%", scale: 0.6,  zIndex: 7, opacity: 0.7, filter: "brightness(0.5)" },
+  left2:  { x: "-95%",  y: "-50%", scale: 0.4,  zIndex: 6, opacity: 0.5, filter: "brightness(0.4)" },
+  left3:  { x: "-105%", y: "-50%", scale: 0.25, zIndex: 5, opacity: 0.3, filter: "brightness(0.3)" },
+  right3: { x: "105%",  y: "-50%", scale: 0.25, zIndex: 5, opacity: 0.3, filter: "brightness(0.3)" },
+  right2: { x: "95%",   y: "-50%", scale: 0.4,  zIndex: 6, opacity: 0.5, filter: "brightness(0.4)" },
+  right1: { x: "75%",   y: "-50%", scale: 0.6,  zIndex: 7, opacity: 0.7, filter: "brightness(0.5)" },
+  right:  { x: "45%",   y: "-50%", scale: 0.85, zIndex: 8, opacity: 0.9, filter: "brightness(0.7)" },
 };
 
 const Projects = () => {
