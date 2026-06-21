@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './header.css';
 import { useLocation, useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../../Constants/Images/ava-removebg-preview.png';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -45,16 +46,13 @@ const Header = () => {
       transition-transform duration-300 ${ showHeader ? 'translate-y-0' : '-translate-y-full' }
     `}>
       <div className='flex flex-row justify-between items-center w-full md:w-auto shrink-0 overflow-y-auto scrollbar-hide'>
-        <div>
-          <img 
-            src={logo} 
-            alt="Logo" 
+        <Link to="/home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img
+            src={logo}
+            alt="Logo"
             className="sm:w-[75px] w-[50px] h-auto cursor-pointer"
-            onClick={() => {
-              handleClick('home')
-            }}
           />
-        </div>
+        </Link>
         <div className='overflow-y-auto scrollbar-hide'>
           <motion.div
             className='md:hidden'

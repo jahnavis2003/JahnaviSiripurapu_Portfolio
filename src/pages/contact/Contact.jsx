@@ -214,7 +214,8 @@ const Contact = () => {
 
             <ToastContainer
               toastClassName="bg-stone-900 relative flex p-5 min-h-10 w-auto rounded-md justify-between items-center overflow-hidden cursor-pointer"
-              position="top-right"
+              position="top-center"
+              style={{ width: "min(400px, 90vw)" }}
               theme="dark"
               pauseOnHover
               closeOnClick={false}
