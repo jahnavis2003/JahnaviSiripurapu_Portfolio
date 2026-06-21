@@ -2,12 +2,8 @@
   {
     "id": 0,
     "project_name": "Kaffea-X",
-    "description": "A full-stack coffee trading marketplace platform available on iOS, Android, and web, connecting buyers and sellers across the coffee supply chain. Built with Next.js for the web platform and React Native for mobile, delivering a consistent trading experience across all devices.",
-    "tech_stack": ["Next.js", "React Native"],
-    "marketing_site": "https://www.kaffeax.com/en/",
-    "web_app_link": "https://www.app.kaffeax.com/",
-    "app_store_link": "https://apps.apple.com/us/app/kaffeax/id6764122582",
-    "play_store_link": "https://play.google.com/store/apps/details?id=com.kaffeax.app&pcampaignid=web_share"
+    "description": "A full-stack coffee trading marketplace connecting buyers and sellers across the supply chain, available on web, iOS, and Android. Initiated and drove the React Native mobile app end-to-end — coordinating development across the team, leveraging Claude Code extensively throughout, and handling App Store and Play Store submissions. On the web platform, implemented bulk import/export of coffee listings via AWS S3 and ECS, Zoho Inventory integration for real-time stock sync, and Avalara for automated tax compliance.",
+    "tech_stack": ["Next.js", "React Native", "AWS S3", "AWS ECS", "Claude Code"]
   },
   {
     "id": 1,
