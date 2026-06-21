@@ -31,7 +31,6 @@ const Contact = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: false, margin: '-60px' });
 
-  const data = { name, reviews, email, phone };
 
   const Status = { SUCCESS: 1, ERROR: 3, WARNING: 2, DEFAULT: 0 };
 
