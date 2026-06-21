@@ -5,7 +5,7 @@ Welcome to my personal developer portfolio website! This site showcases the proj
 
 ## 🔗 Website Link
 
-🌐 [View Portfolio](https://jahnavisiripurapu.vercel.app/home)
+🌐 [View Portfolio](https://jahnavisiripurapu.vercel.app)
 
 ---
 
