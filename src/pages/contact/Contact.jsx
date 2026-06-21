@@ -125,7 +125,7 @@ const Contact = () => {
         {/* ── Right form card ── */}
         <div className="relative">
           {/* Glow behind card */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-fuchsia-600/15 via-transparent to-purple-600/10 rounded-3xl blur-xl" />
+          <div className="absolute -inset-1 bg-gradient-to-br from-fuchsia-600/15 via-fuchsia-950/0 to-purple-600/10 rounded-3xl blur-xl" />
 
           <form
             onSubmit={handleSubmit}

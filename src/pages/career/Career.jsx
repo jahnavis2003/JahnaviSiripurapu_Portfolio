@@ -164,10 +164,10 @@ const Career = () => {
       <div className="w-full max-w-5xl mt-60 sm:mt-56 pb-24 px-4 sm:px-0">
 
         {/* Desktop timeline centre line */}
-        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-60 bottom-24 w-px bg-gradient-to-b from-fuchsia-500/60 via-fuchsia-500/20 to-transparent pointer-events-none" />
+        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-60 bottom-24 w-px bg-gradient-to-b from-fuchsia-500/60 via-fuchsia-500/20 to-fuchsia-500/0 pointer-events-none" />
 
         {/* Mobile timeline left line */}
-        <div className="md:hidden absolute left-[1.35rem] top-60 bottom-24 w-px bg-gradient-to-b from-fuchsia-500/60 via-fuchsia-500/20 to-transparent pointer-events-none" />
+        <div className="md:hidden absolute left-[1.35rem] top-60 bottom-24 w-px bg-gradient-to-b from-fuchsia-500/60 via-fuchsia-500/20 to-fuchsia-500/0 pointer-events-none" />
 
         <div className="flex flex-col gap-8 sm:gap-10">
           {careerData.map((item, index) => (
