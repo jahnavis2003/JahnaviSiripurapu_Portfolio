@@ -14,9 +14,10 @@ const ProjectCard = ({ project, position, imageVariants }) => {
         damping: 30,
         mass: 1
       }}
-      style={{ 
-        width: "clamp(280px, 80vw, 600px)", 
+      style={{
+        width: "clamp(280px, 80vw, 600px)",
         position: "absolute",
+        top: "50%",
         boxShadow: "0 10px 30px -5px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.05) inset"
       }}
       animate={position}
