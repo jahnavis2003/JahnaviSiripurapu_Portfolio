@@ -9,7 +9,7 @@ const ContactHeader = () => {
   return (
     <motion.div 
         ref={ContactRef}
-        className="absolute top-24 left-0 right-0 flex justify-center items-center"
+        className="absolute top-28 left-0 right-0 flex justify-center items-center"
         initial={{ y: -20, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ delay: 0.2, duration: 0.5, ease: "easeOut"  }}

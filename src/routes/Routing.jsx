@@ -7,6 +7,7 @@ import Layout from '../Layout/Layout';
 import Skills from '../pages/skills/Skills';
 import Projects from '../pages/projects/Projects';
 import Contact from '../pages/contact/Contact';
+import Career from '../pages/career/Career';
 import NotFound from '../pages/Misc/PageNotFound';
 import { Navigate } from 'react-router';
 // import Fun from '../pages/interactions/Fun';
@@ -21,6 +22,7 @@ const Routing = () => {
           <Route path="about" element={<About />}/>
           <Route path="skills" element={<Skills />}/>
           <Route path="projects" element={<Projects />}/>
+          <Route path="career" element={<Career />}/>
           <Route path="contact" element={<Contact />}/>
           {/* <Route path="fun" element={<Fun />}/> */}
         </Route>

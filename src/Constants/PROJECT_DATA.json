@@ -1,8 +1,18 @@
 [
   {
+    "id": 0,
+    "project_name": "Kaffea-X",
+    "description": "A full-stack coffee trading marketplace platform available on iOS, Android, and web, connecting buyers and sellers across the coffee supply chain. Built with Next.js for the web platform and React Native for mobile, delivering a consistent trading experience across all devices.",
+    "tech_stack": ["Next.js", "React Native"],
+    "marketing_site": "https://www.kaffeax.com/en/",
+    "web_app_link": "https://www.app.kaffeax.com/",
+    "app_store_link": "https://apps.apple.com/us/app/kaffeax/id6764122582",
+    "play_store_link": "https://play.google.com/store/apps/details?id=com.kaffeax.app&pcampaignid=web_share"
+  },
+  {
     "id": 1,
     "project_name": "JANY – Voice-Driven AI Assistant",
-    "description": "Built a React Native app enabling voice-based interaction with ChatGPT and DALL·E for accessible, text-free communication. Implemented speech-to-text and text-to-speech to support users with reading, writing, or vision impairments. Added a custom feature called “Cookie”, an AI-powered cooking assistant that suggests recipes based on available ingredients.",
+    "description": "Built a React Native app enabling voice-based interaction with ChatGPT and DALL·E for accessible, text-free communication. Implemented speech-to-text and text-to-speech to support users with reading, writing, or vision impairments. Added a custom feature called 'Cookie', an AI-powered cooking assistant that suggests recipes based on available ingredients.",
     "extra_info":"Presented at ICETCI 2024 & published on the official IEEE website",
     "tech_stack": ["React Native", "Open AI API"],
     "github_link": "https://github.com/jahnavis2003/JANY-VoiceAssistant",
@@ -10,6 +20,18 @@
   },
   {
     "id": 2,
+    "project_name": "1stAskHR",
+    "description": "An AI-driven HR chatbot platform with multi-tenancy support and role-based authentication. Enables organizations to streamline HR queries and automate employee support through intelligent conversation. Built with React and Shadcn UI for the frontend, .NET for the backend, and Python powering the AI layer.",
+    "tech_stack": ["React", "Shadcn UI", ".NET", "Python"]
+  },
+  {
+    "id": 3,
+    "project_name": "Kanban",
+    "description": "An internal Kanban application for task and project management, built with React and .NET. Features drag-and-drop boards, task cards, and workflow management to help teams visualize and track work in progress.",
+    "tech_stack": ["React", ".NET"]
+  },
+  {
+    "id": 4,
     "project_name": "Malware Analysis",
     "description": "Developed a system to detect and classify malware using machine learning, deep learning (MLP), and behavioral analysis. Used dynamic analysis to monitor system calls and network activity, and trained an MLP model on extracted features to identify malware families and emerging threats. Aimed at improving early detection and strengthening cybersecurity defenses.",
     "tech_stack": ["Python", "Cuckoo Sandbox", "Jupyter Notebook", "ML Libraries"],
@@ -17,7 +39,22 @@
     "other_data": ""
   },
   {
-    "id": 3,
+    "id": 5,
+    "project_name": "Portfolio Website",
+    "description": "A personal portfolio showcasing my projects, skills, and experience in software development, including full-stack applications, data visualizations, and AI integrations. Built with modern web technologies to highlight my work and demonstrate my expertise.",
+    "tech_stack": ["ReactJs", "Tailwind CSS", ".NET", "MSSQL"],
+    "url": "https://jahnavis2003.github.io/JahnaviSiripurapu_Portfolio/#/home",
+    "github_link": "https://github.com/jahnavis2003/JahnaviSiripurapu_Portfolio",
+    "other_data": ""
+  },
+  {
+    "id": 6,
+    "project_name": "E-Commerce Website",
+    "description": "A fully functional e-commerce platform built with React.js, ASP .NET CORE, and MongoDB. Features include product listings, user authentication, role-based authorization, shopping cart, and order management. Designed for a seamless shopping experience with an intuitive UI.",
+    "tech_stack": ["ReactJs", "Bootstrap", ".NET", "MongoDB"],
+    "other_data": ""
+  },  {
+    "id": 7,
     "project_name": "Weather App",
     "description": "A sleek weather app built with HTML, CSS, and JavaScript, using the OpenWeather API to display real-time weather data. Integrated Unsplash API to dynamically load background images based on the searched location, enhancing the visual experience.",
     "tech_stack": ["HTML", "CSS", "Javascript"],
@@ -26,24 +63,24 @@
     "other_data": ""
   },
   {
-    "id": 4,
+    "id": 8,
     "project_name": "Netflix Clone",
     "description": "A responsive Netflix clone built using React.js, featuring a sleek UI with movie listings, banners, and trailers. Integrated TMDB API to fetch real-time movie data and display dynamic content, replicating the Netflix browsing experience.",
-    "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "Friebase", "MongoDB"],
+    "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "Firebase", "MongoDB"],
     "github_link": "https://github.com/jahnavis2003/NetflixCloneReact",
-    "other_data": ""  
+    "other_data": ""
   },
   {
-    "id": 5,
+    "id": 9,
     "project_name": "Zomato Clone",
     "description": "A full-stack food delivery app inspired by Zomato, built with React.js, Node.js, and MongoDB. Features restaurant listings, search, user authentication, cart management, and payment gateway integration for seamless order checkout. Backend APIs handle data storage and real-time operations, providing a smooth and responsive user experience.",
     "tech_stack": ["ReactJs", "HTML", "CSS", "Javascript", "Bootstrap", "MongoDB"],
     "url": "https://luminous-medovik-807a05.netlify.app/",
     "github_link": "https://github.com/jahnavis2003/Zomato-Clone_Reactjs",
-    "other_data": ""  
+    "other_data": ""
   },
   {
-    "id": 6,
+    "id": 10,
     "project_name": "Mini Game",
     "description": "A classic Checkers mini-game built in Python for a CS club contest. Features turn-based gameplay, basic AI for single-player mode, and a simple GUI using Pygame. Designed for quick fun and competitive play.",
     "tech_stack": ["Python"],
@@ -51,27 +88,11 @@
     "other_data": ""
   },
   {
-    "id": 7,
+    "id": 11,
     "project_name": "Data Visualization",
     "description": "A full-stack web app for visualizing student data like grades, attendance, and timetables, built with Node.js and MongoDB. Implements role-based authentication with distinct views for students, teachers, and admins. Features a clean UI and dynamic charts for clear, actionable insights.",
     "tech_stack": ["ReactJs", "NodeJs", "ExpressJs", "MongoDB"],
     "github_link": "https://github.com/Rounak-Das-02/ScoreVyu",
-    "other_data": ""  
-  },
-  {
-    "id": 8,
-    "project_name": "Portoflio Website",
-    "description": "A personal portfolio showcasing my projects, skills, and experience in web development, including full-stack applications, data visualizations, and AI integrations. Built with modern web technologies to highlight my work and demonstrate my expertise.",
-    "tech_stack": ["ReactJs", "Tailwind CSS", ".NET", "MSSQL"],
-    "url": "https://jahnavis2003.github.io/JahnaviSiripurapu_Portfolio/#/home",
-    "github_link": "https://github.com/jahnavis2003/JahnaviSiripurapu_Portfolio",
-    "other_data": ""
-  },
-  {
-    "id": 9,
-    "project_name": "E-Commerce Website",
-    "description": "A fully functional e-commerce platform built with React.js, ASP .NET CORE, and MongoDB. Features include product listings, user authentication, role-based authorization, shopping cart, and order management. Designed for a seamless shopping experience with an intuitive UI.",
-    "tech_stack": ["ReactJs", "Bootstrap", ".NET", "MongoDB"],
     "other_data": ""
   }
 ]

@@ -5,6 +5,7 @@ import projectData  from '../../Constants/PROJECT_DATA.json';
 import Controls from './Controls';
 import ProjectsHeader from './ProjectsHeader';
 import useKeyboardNavigation from './hooks/useKeyboardNavigation';
+import useTouchSwipe from './hooks/useTouchSwipe';
 
 const positions = [
   "center", "left", "left1", "left2", "left3", 
@@ -78,16 +79,17 @@ const imageVariants = {
 };
 
 const Projects = () => {
-  const [positionIndexes, setPositionIndexes] = useState(Array.from(
-    { length: projectData.length }, 
-    (_, i) => i
-  ).slice(0, 9));
+  const [positionIndexes, setPositionIndexes] = useState(() => {
+    const n = projectData.length;
+    // center=0, left side=wrap-around tail, right side=upcoming projects
+    return [0, n - 1, n - 2, n - 3, n - 4, 4, 3, 2, 1];
+  });
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
       const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex - 1 + projectData.length) % projectData.length
+        (prevIndex) => (prevIndex + 1) % projectData.length
       );
       return updatedIndexes;
     });
@@ -97,15 +99,15 @@ const Projects = () => {
   const handleBack = () => {
     setPositionIndexes((prevIndexes) => {
       const updatedIndexes = prevIndexes.map(
-        (prevIndex) => (prevIndex + 1) % projectData.length
+        (prevIndex) => (prevIndex - 1 + projectData.length) % projectData.length
       );
       return updatedIndexes;
     });
     setCurrentIndex((prev) => (prev - 1 + projectData.length) % projectData.length);
   };
 
-  // Use keyboard navigation hook
   useKeyboardNavigation({ handleNext, handleBack });
+  const { onTouchStart, onTouchEnd } = useTouchSwipe({ handleNext, handleBack });
 
   // If no projects or positions aren't initialized yet, show loading state
   if (projectData.length === 0 || positionIndexes.length === 0) {
@@ -119,11 +121,14 @@ const Projects = () => {
   return (
     <motion.div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-black overflow-y-auto overflow-x-hidden font-sans">
       <ProjectsHeader /> 
-      <div className="flex items-center justify-center">
+      <div
+        className="flex items-center justify-center"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
         {/* Background glow effect */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-fuchsia-500/10 rounded-full blur-3xl" />
-        
-        {/* Project cards */}
+
         {projectData.map((project, dataIndex) => {
           const positionIndex = positionIndexes.findIndex(index => index === dataIndex);
           // If this project is not in the current view, don't render it

@@ -7,6 +7,7 @@ import AboutMe from '../about/About';
 import Skills from '../skills/Skills';
 import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
+import Career from '../career/Career';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import Attributes from '../../Components/Attributes';
@@ -73,6 +74,7 @@ const Home = () => {
         </div>
       </motion.div> 
       <AboutMe />
+      <Career />
       <Skills />
       <Projects />
       <Contact />

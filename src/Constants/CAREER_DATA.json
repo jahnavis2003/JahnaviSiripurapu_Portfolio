@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "company": "Techgrit",
+    "role": "Software Developer",
+    "type": "Full-time",
+    "start": "Oct 2025",
+    "end": "Present",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "description": [
+      "Building and enhancing web and mobile applications using Next.js and React Native.",
+      "Developing end-to-end product features across frontend and backend systems.",
+      "Leading key development initiatives, including the mobile application effort, CI/CD implementation, and app store release management."
+    ],
+    "tech_stack": ["Next.js", "React Native", "CI/CD"]
+  },
+  {
+    "id": 2,
+    "company": "ADP Pvt Ltd",
+    "role": "Member Technical",
+    "type": "Full-time",
+    "start": "Sep 2024",
+    "end": "Oct 2025",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "description": [
+      "Implemented and maintained Time & Attendance (T&A) solutions using Workforce Software (WFS) and Workforce Manager (WFM) for global clients, including Hollister Netherlands and PBF Energy.",
+      "Utilized Java, JavaScript, and SQL for data audits, integrations, imports/exports, and workforce management configurations.",
+      "Collaborated with cross-functional teams to analyze business requirements, troubleshoot issues, and deliver customized workforce management solutions.",
+      "Improved operational efficiency by streamlining audit processes and automating routine data operations."
+    ],
+    "tech_stack": ["Java", "JavaScript", "SQL", "WFS", "WFM"]
+  },
+  {
+    "id": 3,
+    "company": "5th Bridge Data Technologies LLP",
+    "role": "Software Developer Intern",
+    "type": "Internship",
+    "start": "Jan 2024",
+    "end": "Jun 2024",
+    "location": "Hyderabad, India",
+    "mode": "On-site",
+    "description": [
+      "Developed multiple full-stack applications using React and .NET, including a Craps game, CRUD management system, e-commerce platform, Kanban board, AI-powered HR chatbot, and resume management application.",
+      "Implemented features such as role-based authentication, multi-tenancy, REST API integrations, and responsive user interfaces.",
+      "Contributed to production-level AI-enabled HR solutions while gaining hands-on experience with React, .NET Core, JavaScript, and Agile development practices."
+    ],
+    "tech_stack": ["React", ".NET Core", "JavaScript", "REST APIs"]
+  },
+  {
+    "id": 4,
+    "company": "Fluentgrid",
+    "role": "Software Developer Intern",
+    "type": "Internship",
+    "start": "Jul 2023",
+    "end": "Aug 2023",
+    "location": "Hyderabad, India",
+    "mode": "Hybrid",
+    "description": [
+      "Worked with Java, Apache POI, and MySQL to process and transform large smart meter datasets.",
+      "Developed Excel-to-CSV conversion workflows, implemented error handling and logging mechanisms, and optimized data processing performance."
+    ],
+    "tech_stack": ["Java", "Apache POI", "MySQL"]
+  }
+]

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Home, Mail, Briefcase, Code2, User, Github, Twitter, Linkedin, MapPin } from 'lucide-react';
+import { Home, Mail, Briefcase, Code2, User, Github, Linkedin, MapPin } from 'lucide-react';
+import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
   const footerRef = useRef(null);
@@ -8,7 +9,7 @@ const Footer = () => {
   const footerRefBottom = useRef(null);
   const isInViewBottom = useInView(footerRefBottom, { once: false, margin: "-100px" }); 
   return (
-    <div className="w-full bg-neutral-900/30 backdrop-blur-sm border-t border-neutral-800/40">
+    <div id="site-footer" className="w-full bg-neutral-900/30 backdrop-blur-sm border-t border-neutral-800/40">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <motion.div 
           ref={footerRef}
@@ -23,7 +24,7 @@ const Footer = () => {
                 Jahnavi Siripurapu
               </h2>
               <p className="text-neutral-400 mt-2 max-w-md mx-auto text-md sm:text-lg">
-                Crafting beautiful web experiences with modern technologies and creative design solutions.
+                Crafting impactful software experiences by blending creativity, innovation, and user-focused design.
               </p>
             </div>
             {/* Social Links */}
@@ -47,10 +48,7 @@ const Footer = () => {
                 className="p-3 rounded-3xl bg-white/5 backdrop-blur-sm text-neutral-400 hover:text-fuchsia-400 transition-all duration-300 hover:bg-fuchsia-400/10 hover:scale-110 hover:shadow-[0px_0px_19px_rgba(113,99,110,0.9)]"
                 aria-label="Twitter"
               >
-                <Twitter 
-                  // size={24} 
-                  className="w-5 h-5 sm:w-6 sm:h-6"
-                />
+                <XIcon sx={{ fontSize: { xs: 20, sm: 24 } }} />
               </a>
               <a 
                 href="https://www.linkedin.com/in/jahnavi-siripurapu-a7290a241/" 
@@ -87,7 +85,7 @@ const Footer = () => {
           className='flex flex-col mdl:flex-row items-center justify-between'
         >
             {/* Quick Links */}
-            <nav className="flex flex-wrap justify-center gap-8 md:gap-12 mb-8">
+            <nav className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 mb-8 mdl:mb-0">
               <a 
                 href="/home" 
                 className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
@@ -99,24 +97,24 @@ const Footer = () => {
                 <span>Home</span>
               </a>
               <a 
-                href="/contact" 
+                href="/about" 
                 className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
               >
-                <Mail 
+                <User 
                   // size={18} 
-                  className="w-4 h-4 sm:w-5 sm:h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5" 
                 />
-                <span>Contact</span>
+                <span>About</span>
               </a>
               <a 
-                href="/projects" 
+                href="/career" 
                 className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
               >
                 <Briefcase 
-                  // size={18} 
-                  className="w-4 h-4 sm:w-5 sm:h-5"
+                  // size={18}  
+                className="w-4 h-4 sm:w-5 sm:h-5"
                 />
-                <span>Projects</span>
+                <span>Career</span>
               </a>
               <a 
                 href="/skills" 
@@ -128,15 +126,25 @@ const Footer = () => {
                 />
                 <span>Skills</span>
               </a>
-              <a 
-                href="/about" 
+               <a 
+                href="/projects" 
                 className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
               >
-                <User 
+                <Briefcase 
                   // size={18} 
-                  className="w-4 h-4 sm:w-5 sm:h-5" 
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                 />
-                <span>About</span>
+                <span>Projects</span>
+              </a>
+              <a 
+                href="/contact" 
+                className="flex items-center gap-2 text-neutral-400 hover:text-fuchsia-400 hover:underline transition-colors duration-200 text-sm sm:text-base"
+              >
+                <Mail 
+                  // size={18} 
+                  className="w-4 h-4 sm:w-5 sm:h-5"
+                />
+                <span>Contact</span>
               </a>
             </nav>
           {/* Contact Info */}

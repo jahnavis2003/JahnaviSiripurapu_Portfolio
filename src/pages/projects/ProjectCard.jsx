@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github, Globe, Apple, PlayCircle, FileText } from 'lucide-react';
 
 const ProjectCard = ({ project, position, imageVariants }) => {
   // console.log('tech_stack:', project.tech_stack); 
   return (
     <motion.div
       className="rounded-2xl overflow-hidden overflow-y-auto max-h-[80vh] h-[50vh] bg-gradient-to-br from-neutral-900/50 to-neutral-800/50 p-6 backdrop-blur-lg text-white shadow-xl scrollbar-hide"
-      initial="center"
+      initial={position}
       transition={{ 
         type: "spring", 
         stiffness: 300, 
@@ -41,27 +41,25 @@ const ProjectCard = ({ project, position, imageVariants }) => {
         
         <div className="space-y-3 w-full sm:pb-0 pb-5">
           {project.github_link && (
-            <LinkItem 
-              icon="github" 
-              label="GitHub" 
-              url={project.github_link} 
-            />
+            <LinkItem icon="github" label="GitHub" url={project.github_link} />
           )}
-          
           {project.url && (
-            <LinkItem 
-              icon="demo" 
-              label="Live Demo" 
-              url={project.url} 
-            />
+            <LinkItem icon="demo" label="Live Demo" url={project.url} />
           )}
-          
+          {project.marketing_site && (
+            <LinkItem icon="demo" label="Marketing Site" url={project.marketing_site} />
+          )}
+          {project.web_app_link && (
+            <LinkItem icon="demo" label="Web App" url={project.web_app_link} />
+          )}
+          {project.app_store_link && (
+            <LinkItem icon="appstore" label="App Store" url={project.app_store_link} />
+          )}
+          {project.play_store_link && (
+            <LinkItem icon="playstore" label="Play Store" url={project.play_store_link} />
+          )}
           {(project.paper_link && project.extra_info) && (
-            <LinkItem 
-              icon="paper" 
-              label={`Research Paper: ${project.extra_info}`} 
-              url={project.paper_link} 
-            />
+            <LinkItem icon="paper" label={`Research Paper: ${project.extra_info}`} url={project.paper_link} />
           )}
         </div>
       </div>
@@ -77,12 +75,13 @@ const LinkItem = ({ icon, label, url }) => {
       rel="noopener noreferrer" 
       className="flex items-center gap-2 p-2.5 bg-neutral-800/70 rounded-lg hover:bg-neutral-700/70 transition-colors group"
     >
-      {!(icon === 'paper') &&
-        <div className="w-5 h-5 flex items-center justify-center">
-          {icon === 'github' && <span className="sm:text-lg text-md">🔗</span>}
-          {icon === 'demo' && <span className="sm:text-lg text-md">🌐</span>}
-        </div>
-      }
+      <div className="w-5 h-5 flex items-center justify-center flex-shrink-0">
+        {icon === 'github'    && <Github    className="w-4 h-4 text-neutral-300" />}
+        {icon === 'demo'      && <Globe     className="w-4 h-4 text-neutral-300" />}
+        {icon === 'appstore'  && <Apple     className="w-4 h-4 text-neutral-300" />}
+        {icon === 'playstore' && <PlayCircle className="w-4 h-4 text-neutral-300" />}
+        {icon === 'paper'     && <FileText  className="w-4 h-4 text-neutral-300" />}
+      </div>
       <span className="sm:text-sm text-xs text-neutral-200 text-wrap text-start">{label}</span>
       <ArrowUpRight 
         className="ml-auto sm:w-4 sm:h-4 w-3 h-3 text-neutral-400 group-hover:text-white transition-colors flex-shrink-0" 

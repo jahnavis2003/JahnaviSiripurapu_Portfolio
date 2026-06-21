@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const words = ['Full Stack Developer', 'Designer', 'Creator', 'Problem Solver'];
+const words = ['Software Developer', 'Designer', 'Creator', 'Problem Solver'];
 
 const Attributes = () => {
     const [index, setIndex] = useState(0);

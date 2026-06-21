@@ -10,7 +10,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   let navigate = useNavigate();
   let location = useLocation();
-  const navbarItems = ['HOME', 'ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'];
+  const navbarItems = ['HOME', 'ABOUT', 'CAREER', 'SKILLS', 'PROJECTS', 'CONTACT'];
   const [showHeader, setShowHeader] = useState(true);
 
   const lastScrollY = useRef(0);
@@ -44,7 +44,7 @@ const Header = () => {
     <div className={`flex md:flex-row flex-col md:justify-between items-start z-50 fixed w-full bg-black md:items-center p-3 pr-0 py-0 border-b-2 border-neutral-900 shadow-xl shadow-neutral-800/40 overflow-y-auto scrollbar-hide
       transition-transform duration-300 ${ showHeader ? 'translate-y-0' : '-translate-y-full' }
     `}>
-      <div className='flex flex-row justify-between items-center w-full overflow-y-auto scrollbar-hide'>
+      <div className='flex flex-row justify-between items-center w-full md:w-auto shrink-0 overflow-y-auto scrollbar-hide'>
         <div>
           <img 
             src={logo} 
@@ -103,7 +103,7 @@ const Header = () => {
                 ? 'text-pink-100 shadow-[inset_0_-10px_10px_-5px_rgba(217,70,239,0.5),_0_10px_10px_-4px_rgba(217,70,239,0.5)]'
                 : 'text-pink-100 hover:text-pink-200'
               }
-              p-[35px] pt-6 pb-0 
+              px-[18px] mdl:px-[35px] pt-6 pb-0
             `}
             // initial={false}
             // transition={{
